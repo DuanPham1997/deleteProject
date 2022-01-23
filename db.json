@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "product": [
+    {
+      "id": 3,
+      "name": "san pham 3",
+      "price": 3000,
+      "image": "./assets/images/sanpham.jpg"
+    },
+    {
+      "id": 4,
+      "name": "san pham 4",
+      "price": 3000,
+      "image": "./assets/images/sanpham.jpg"
+    },
+    {
+      "id": 5,
+      "name": "san pham 5",
+      "price": 3000,
+      "image": "./assets/images/sanpham.jpg"
+    },
+    {
+      "id": 6,
+      "name": "san pham 6",
+      "price": 3000,
+      "image": "./assets/images/sanpham.jpg"
+    },
+    {
+      "id": "0.8228837331848717526414",
+      "name": "kem tri mun",
+      "price": "526414",
+      "image": "./assets/images/sanpham.jpg"
+    }
+  ]
+}

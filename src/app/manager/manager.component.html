@@ -1,0 +1,19 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Anh</th>
+            <th>Ten sp</th>
+            <th>Gia</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let item of product">
+            <td scope="row"><img src="{{item.image}}" alt="" width="60px"></td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td><a class="btn btn-primary" routerLink = "/edit/{{item.id}}">Edit</a><button class="btn btn-danger" (click)="onDelete(item.id)">Delete</button></td>
+        </tr>
+        
+    </tbody>
+</table>
