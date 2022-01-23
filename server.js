@@ -4,11 +4,13 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/delete-project'));
+app.use(express.static(_dirname + './dist'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/angular-app-heroku/'}),
+    res.sendFile(path.join(_dirname + '/dist/index.html')),
 );
 
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
+
+console.log('console listening')
